@@ -4,7 +4,7 @@ const DOMODEDOVO_LAT = 55.410307;
 const DOMODEDOVO_LON = 37.902451;
 
 const toKmh = knots => Math.floor(knots * KNOTS_KMH_RATIO);
-const toMeters = feet => { console.log(feet); return Math.floor(feet * FEET_METERS_RATIO) };
+const toMeters = feet => Math.floor(feet * FEET_METERS_RATIO);
 
 // calculate the distance using the haversine formula. the result is returned in km
 const getDistance = (lat1, lat2, lon1, lon2) => {

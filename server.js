@@ -15,7 +15,7 @@ const URL = 'https://data-live.flightradar24.com/zones/fcgi/feed.js?bounds=56.84
 
 // fetch the JSON data with the plane's info. needed to override CORS
 app.get('/data', async (req, res) => {
-  const jsonData = await fetch(URL).then((response) => response.json());
+  const jsonData = await fetch(URL).then(response => response.json());
   res.send(jsonData);
 });
 

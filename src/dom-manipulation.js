@@ -1,4 +1,4 @@
-const initialRender = function _initialRender(data) {
+export default function render(data) {
   const tableBody = document.querySelector('tbody');
   const rowsCount = data.length;
   const columnsCount = 8;
@@ -51,9 +51,9 @@ const initialRender = function _initialRender(data) {
     return row;
   });
 
+  tableBody.innerHTML = '';
+
   for (const row of rows) {
     tableBody.appendChild(row);
   }
-};
-
-export { initialRender };
+}
