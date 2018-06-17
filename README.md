@@ -1,3 +1,11 @@
+# How to launch
+
+`npm install`
+
+`npm start server`
+
+Open the browser on port 9000
+
 # Things to improve
 
 - [ ] Optimize the table rendering. re-render only the rows which were changed. this could be done
