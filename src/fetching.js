@@ -26,6 +26,12 @@ const getDistance = (lat1, lat2, lon1, lon2) => {
   return Number(d.toFixed(3));
 };
 
+const sortByDistance = (data) => {
+  const planesData = data.slice();
+
+  return planesData.sort((a, b) => a.distance - b.distance);
+};
+
 const getPlanesData = async function _getPlanesData() {
   const planesJSON = await fetch('/data').then(response => response.json());
   let planesData = [];
@@ -44,7 +50,7 @@ const getPlanesData = async function _getPlanesData() {
     planesData = planesData.concat(dataObj);
   }
 
-  return planesData;
+  return sortByDistance(planesData);
 };
 
 export default getPlanesData;
