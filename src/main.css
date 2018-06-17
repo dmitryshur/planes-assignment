@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: #aaa;
-  font-family: "Roboto", helvetica, arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -22,10 +21,7 @@ body {
   padding:5px;
   width: 100%;
   box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 100px;
 }
  
 th {
